@@ -62,7 +62,7 @@ function App() {
         <p>use GraphQL</p>
         <ul>
           {Object.keys(graphqlData).length &&
-            graphqlData.map((item: any, i: number) => (
+            graphqlData.map((item: { name: string }, i: number) => (
               <li key={i}>{item.name}</li>
             ))}
         </ul>
